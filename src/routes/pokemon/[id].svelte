@@ -4,7 +4,6 @@
 	/** Fetch pokemon data & pass it to the component as a prop */
 	export async function load({ page }) {
 		const id = page.params.id;
-		console.log('page-params-id', id);
 		const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
 
 		const response = await fetch(url);
@@ -25,7 +24,6 @@
 <script lang="ts">
 	export let pokemon: Poke;
 	const type = pokemon['types'][0].type.name;
-	console.log(pokemon);
 	console.clear();
 </script>
 
