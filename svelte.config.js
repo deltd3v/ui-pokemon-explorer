@@ -1,9 +1,10 @@
 import preprocess from 'svelte-preprocess';
 
-
 import netlifyAdapter from '@sveltejs/adapter-netlify';
 
-const pkg = require('./package.json')
+import staticAdapter from '@sveltejs/adapter-static';
+
+const pkg = require('./package.json');
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -13,16 +14,15 @@ const config = {
 
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte'
-		,
-		adapter: netlifyAdapter()
+		target: '#svelte',
+		adapter: staticAdapter()
 	},
-	
-    vite: {
+
+	vite: {
 		ssr: {
-		  noExternal: Object.keys(pkg.dependencies || {}),
-		},
-	  },
+			noExternal: Object.keys(pkg.dependencies || {})
+		}
+	}
 };
 
 export default config;
