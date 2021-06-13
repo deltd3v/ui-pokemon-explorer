@@ -28,7 +28,7 @@
 </script>
 
 <svelte:head>
-	<title>Pokedex - {pokemon.name}</title>
+	<title>Pokemon - {pokemon.name}</title>
 </svelte:head>
 
 <div class="flex flex-col items-center">
