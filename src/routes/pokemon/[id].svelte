@@ -4,6 +4,7 @@
 	/** Fetch pokemon data & pass it to the component as a prop */
 	export async function load({ page }) {
 		const id = page.params.id;
+		
 		const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
 
 		const response = await fetch(url);
@@ -39,14 +40,15 @@
 	</p>
 	<img
 		class="my-20"
-		style="width:20rem;height:20rem;"
-		src="{`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.id}.svg`}"
 		alt="{`${pokemon.name} image`}"
+	     	style="width:20rem;height:20rem;"
+		src="{`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.id}.svg`}"
+		
 	/>
 
 	<div class="flex flex-row">
-		<img style="width: 10rem;" alt="{pokemon.name} image" src="{pokemon['frontShiny']}" />
+		<img style="width: 14rem;" alt="{pokemon.name} image" src="{pokemon['frontShiny']}" />
 
-		<img style="width: 10rem;" alt="{pokemon.name} image" src="{pokemon['backShiny']}" />
+		<img style="width: 14rem;" alt="{pokemon.name} image" src="{pokemon['backShiny']}" />
 	</div>
 </div>
