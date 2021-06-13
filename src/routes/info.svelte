@@ -8,5 +8,5 @@
 </svelte:head>
 
 <div>
-	<p>Pokemon explorer helps you find a pokemon</p>
+	<p class="uppercase text-4xl text-center">Pokemon explorer helps you find a pokemon</p>
 </div>
