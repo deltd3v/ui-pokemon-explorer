@@ -14,7 +14,13 @@ const config = {
 		target: '#svelte'
 		,
 		adapter: netlifyAdapter()
-	}
+	},
+	
+    vite: {
+		ssr: {
+		  noExternal: Object.keys(pkg.dependencies || {}),
+		},
+	  },
 };
 
 export default config;
