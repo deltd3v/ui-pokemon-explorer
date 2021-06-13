@@ -1,0 +1,47 @@
+{
+	"name": "@ff-blog/web",
+	"version": "0.0.1",
+	"author": {
+		"name": "deltd3v"
+	},
+	"scripts": {
+		"dev": "npm run k-ports && svelte-kit dev",
+		"build": "svelte-kit build",
+		"preview": "npm run k-ports && svelte-kit preview",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --check --plugin-search-dir=. .",
+		"format": "prettier --write '**/**/**/**/**/*.{svelte,css,ts,json,js,md}' --plugin-search-dir=. .",
+		"update": "ncu -u && npm install",
+		"k-ports": "kill-port --method tcp --port 3000,8080,8000"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-netlify": "^1.0.0-next.17",
+		"@sveltejs/kit": "next",
+		"@types/cookie": "^0.4.0",
+		"autoprefixer": "^10.2.6",
+		"kill-port": "^1.6.1",
+		"npm-check-updates": "^11.6.0",
+		"postcss": "^8.3.1",
+		"postcss-cli": "^8.3.1",
+		"prettier": "~2.3.1",
+		"prettier-plugin-svelte": "^2.3.0",
+		"svelte": "^3.38.2",
+		"svelte-check": "^2.1.0",
+		"svelte-preprocess": "^4.7.3",
+		"tailwindcss": "^2.1.4",
+		"tslib": "^2.2.0",
+		"typescript": "^4.3.2"
+	},
+	"type": "module",
+	"dependencies": {
+		"@fontsource/fira-mono": "^4.4.5",
+		"@lukeed/uuid": "^2.0.0",
+		"cookie": "^0.4.1",
+		"quill": "^1.3.7",
+		"quill-image-drop-module": "^1.0.3",
+		"quill-image-resize": "^3.0.9",
+		"quill-image-resize-module": "^3.0.0",
+		"quill-resize-module": "^1.2.4"
+	}
+}

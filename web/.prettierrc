@@ -1,0 +1,20 @@
+{
+	"tabWidth": 1,
+	"useTabs": true,
+	"printWidth": 100,
+	"singleQuote": true,
+	"bracketSpacing": true,
+	"quoteProps": "consistent",
+	"jsxBracketSameLine": true,
+	"jsxSingleQuote": true,
+	"proseWrap": "always",
+	"arrowParens": "avoid",
+	"trailingComma": "none",
+	"semi": true,
+	"svelteStrictMode": true,
+	"svelteAllowShorthand": true,
+	"svelteBracketNewLine": true,
+	"svelteIndentScriptAndStyle": true,
+	"htmlWhitespaceSensitivity": "css",
+	"svelteSortOrder": "scripts-options-markup-styles"
+}
