@@ -9,7 +9,7 @@ svelte.
 
 #### Usage
 
-Checkout (docs/svelte)[docs/svelte.md] to understand how to work with svelte in this project.
+Checkout [docs/svelte](docs/svelte.md) to understand how to work with svelte in this project.
 
 Made with :sparkling_heart: [tailwindcss](https://tailwindcss.com/) - css framework
 [svelte-kit](https://kit.svelte.dev/) - component framework [netlify](https://www.netlify.com/) -
