@@ -43,5 +43,9 @@
 		"quill-image-resize": "^3.0.9",
 		"quill-image-resize-module": "^3.0.0",
 		"quill-resize-module": "^1.2.4"
+	},
+	"engines": {
+		"node": ">=14.0.0",
+		"npm": ">=7.0.0"
 	}
 }
