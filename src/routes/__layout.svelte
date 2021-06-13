@@ -22,7 +22,7 @@
 
 <header>
 	<nav>
-		<Link path="{$page.path}" url="/" label="Home" />
+		<Link path="{$page.path}" url="/" label="Pokemons" />
 		<Link path="{$page.path}" url="/info" label="Info" />
 	</nav>
 
