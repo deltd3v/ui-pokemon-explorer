@@ -5,7 +5,7 @@ svelte.
 
 ## Demo
 
-[See it live]()
+[See it live](https://eager-haibt-87c1d3.netlify.app/)
 
 #### Usage
 
